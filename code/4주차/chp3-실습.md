@@ -10,7 +10,7 @@
  - email            (VARCHAR(100))
  - password         (VARCHAR(255)) -- 암호화해서 DB에 저장해야 함.
  - role             (user_role) -- 유저 권한 [ADMIN, USER]
- - status           (user_status) -- 유저 상태 ['ACTIVE', 'SUSPENDED', 'DELETED']
+ - status           (user_status) -- 유저 상태 ['INACTIVE', 'ACTIVE', 'SUSPENDED', 'DELETED']
  - registered_at    (DATE) -- 등록 날짜
  - updated_at       (DATE) -- 수정 날짜
 
@@ -22,6 +22,7 @@
  - user_id          (FOREIGN KEY)
  */
 
+~~~
 CREATE TYPE user_role AS ENUM ('ADMIN', 'USER'); -- ENUM 열거형 타입 생성
 CREATE TYPE user_status AS ENUM ('INACTIVE', 'ACTIVE', 'SUSPENDED', 'DELETED');
 
@@ -80,3 +81,4 @@ ORDER BY level desc;
 
 SELECT * FROM users
 WHERE status = 'ACTIVE';
+~~~
