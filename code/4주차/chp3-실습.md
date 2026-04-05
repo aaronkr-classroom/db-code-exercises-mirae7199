@@ -17,7 +17,7 @@
  [profile properties]
  - profile_id               (BIGSERIAL)
  - nickname         (VARCHAR(30))
- - level            (NUMERIC)
+ - level            (INTE)
  - exp              (NUMERIC)
  - user_id          (FOREIGN KEY)
  */
@@ -40,7 +40,7 @@ CREATE TABLE users(
 CREATE TABLE profile(
     profile_id BIGSERIAL PRIMARY KEY,
     nickname VARCHAR(30) NOT NULL UNIQUE, -- 닉네임 중복 X
-    level NUMERIC NOT NULL DEFAULT 1,
+    level INTEGER NOT NULL DEFAULT 1,
     exp NUMERIC NOT NULL DEFAULT 0,
     user_id BIGINT NOT NULL UNIQUE, -- FK
 
