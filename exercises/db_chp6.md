@@ -34,6 +34,8 @@
 관계 개체는 두 개체 사이의 관계, 특히 M:N 관계를 해결하기 위해 만들어지는 개체이다.
 
 4. 다음과 같은 병렬 관계를 직렬 관계로 변환하여 ER 다이어그램으로 표현하시오. (슬라이드 나 책 235쪽)<br>
+<img width="3876" height="2244" alt="erdplus-4" src="https://github.com/user-attachments/assets/47655a25-67a6-43d5-b5b1-d8a4a3feb052" />
+
 
 
 5. (________) 안에 적합한 단어는?<br>
